@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Susans Personal Site</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=1920&q=80") center center fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 40px;
+      }
+
+      /* Dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 30, 0.25);
+        z-index: -1;
+      }
+
+      /* All text: white + shadow */
+      h1, h3, p, td, th, li, a {
+        color: #ffffff !important;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      }
+
+      /* ← NEW: GLASS CARD FOR HEADER (Susan + image + bio) */
+      .header-card {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 18px;
+        padding: 25px;
+        margin: 20px auto;
+        max-width: 900px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .header-card img {
+        border-radius: 15px;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+      }
+
+      /* ← FOOTER LINKS (same style as before) */
+      .footer-links {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        display: inline-block;
+        width: 80%;
+        max-width: 500px;
+      }
+
+      .footer-links a {
+        display: inline-block;
+        margin: 10px 20px;
+        padding: 12px 25px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }
+
+      /* Softer hr */
+      hr {
+        border: none;
+        border-top: 4px dotted rgba(255, 255, 255, 0.4);
+        width: 8%;
+        margin: 50px auto;
+      }
+    </style>
+</head>
+
+<body>
+
+  <!-- ← NEW: HEADER CARD (encircled section) -->
+  <div class="header-card">
+    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=1000" alt="Susan profile picture" width="250" height="180">
+    <div>
+      <h1>Susan Mosopefoluwa</h1> 
+      <p><em>Founder of <strong><a href="https://www.appbrewery.com">Sobrahim</a></strong></em></p>
+      <p>I am a computer engineering major at Elizade University. I am a web developer.</p>
+    </div>
+  </div>
+   
+  <hr>
+  <h3>Books and Teaching</h3>   
+  <ol type="i">
+    <li>Introduction to Web Development</li>
+    <li>The complete Web Development Bootcamp</li>
+    <li>Understanding CSS</li> 
+  </ol>
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <tr><th>Dates</th><th>Work</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Aug-Nov 2023</td><td>IT Support Intern at Coleman Strategies</td></tr>
+      <tr><td>Aug-Nov 2024</td><td>Remote Learning Assistant at App Brewery</td></tr>
+      <tr><td>Aug-Nov 2025</td><td>IT Support Intern at Century Gateway Technologies</td></tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+   <table cellspacing="10">
+    <tr><td>HTML5</td><td>⭐⭐⭐</td></tr>
+    <tr><td>Java</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Assembly Programming</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Computer Architecture</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Microcontroller Basics</td><td>⭐⭐⭐</td></tr>  
+    <tr><td>Communication and Documentation</td><td>⭐⭐⭐⭐</td></tr>
+  </table>
+  <hr>
+
+  <!-- ← FOOTER LINKS (same glass style) -->
+  <div class="footer-links">
+    <a href="hobbies.html">My Hobbies</a>
+    <a href="contactdetails.html">Contact Details</a>
+  </div>
+
+</body>
+</html>
